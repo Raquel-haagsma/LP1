@@ -10,11 +10,11 @@ class Entrada {
     public Double lerNumeroDouble(String msg) {
         while (true) {
             try {
-                System.out.print(msg + " =>");
+                System.out.print(msg);
                 double x = teclado.nextDouble();
                 return x;
             } catch (Exception e) {
-                System.out.println("Erro,digite um double....");
+                System.out.println("Erro,digite um double...");
                 teclado = new Scanner(System.in);
             }
         }
@@ -23,11 +23,11 @@ class Entrada {
     public Integer lerNumeroInteiro(String msg) {
         while (true) {
             try {
-                System.out.print(msg + " =>");
+                System.out.print(msg);
                 int x = teclado.nextInt();
                 return x;
             } catch (Exception e) {
-                System.out.println("Erro,digite um inteiro....");
+                System.out.println("Erro,digite um inteiro...");
                 teclado = new Scanner(System.in);
             }
         }
@@ -37,7 +37,7 @@ class Entrada {
         //evita que o usuário deixe a string vazia
         while (true) {
             try {
-                System.out.print(msg + " =>");
+                System.out.print(msg);
                 String x = teclado.nextLine();
                 if (x.trim().isEmpty()) {
                     int k = 3 / 0; //propositalmente provoca um erro para ir para o catch
