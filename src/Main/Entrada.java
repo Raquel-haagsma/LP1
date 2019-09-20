@@ -69,5 +69,18 @@ class Entrada {
             }
         }
     }
+    
+    public char lerChar(String msg) {
+        while (true) {
+            try {
+                System.out.print(msg);
+                char x = teclado.next().charAt(0);
+                return x;
+            } catch (Exception e) {
+                System.out.println("Erro,digite um char...");
+                teclado = new Scanner(System.in);
+            }
+        }
+    }
 
 }

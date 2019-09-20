@@ -14,4 +14,12 @@ class Saida {
     public void imprimirAvisoString(String aviso) {
         System.out.println(aviso);
     }
+    
+    public void imprimirInt(String msg, int s) {
+        System.out.println(msg + s);
+    }
+    
+    public void imprimirString(String msg,String s) {
+        System.out.println(msg + s);
+    }
 }
